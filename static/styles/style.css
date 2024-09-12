@@ -1,0 +1,2957 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; /* Отключает горизонтальную прокрутку */
+    font-family: sans-serif;
+    
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Запрещаем горизонтальную прокрутку на всех устройствах по умолчанию */
+    overflow-y: auto; /* Вертикальная прокрутка доступна всегда */
+    box-sizing: border-box; /* Гарантируем правильные размеры контейнеров с учётом padding и border */
+}
+
+/* заголовок н1 */
+.h1 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    line-height: 1.375;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-left: 23px;
+    border-bottom: 1px solid #a09494;
+    width: 95.6%;
+    padding-top: 1px;
+}
+
+
+/* Под заголовок */
+.under-heading-h1{
+    
+    font-size: 12.8px;
+    font-family: sans-serif;
+    margin-left: 23px;
+    margin-top: -10px;
+    
+}
+
+/* Правка */
+.span-editing-h1 {
+    float: right;
+    clear: right;
+    position: relative;
+    
+    margin-top: -0.25em;
+    line-height: inherit;
+    margin-right: 24px;
+    font-size: 13px;
+}
+
+.h2 {
+margin-bottom: 0.25em;
+padding: 0;
+font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+line-height: 1.375;
+font-weight: normal;
+border-bottom: 1px solid #a09494;
+width: 69.1%;
+
+
+}
+
+.h3 {
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    line-height: 1.375;
+    font-weight: normal;
+    border-bottom: 1px solid #a09494;
+    width: 97.6%;
+
+}
+
+.h4 {
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    line-height: 1.375;
+    font-weight: normal;
+    border-bottom: 1px solid #a09494;
+    width: 97.6%;
+   
+}
+.h4-ul{
+    list-style-image: url(https://ru.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/bullet-icon.svg?d4515);
+    
+    margin-left: -18px;
+    margin-top: 1px;
+    line-height: 1.7;
+}
+
+.hatnote-navigation-not-searchable{
+    font-style: italic;
+    padding-left: 1.6em;
+    margin-bottom: -7px;
+}
+/* Окно с изображением с права */
+.element-content{ 
+    display: block;
+    position: relative;
+    float: right;
+    clear: right;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 30px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+        background: var(--background-color-neutral-subtle, #f8f9fa);
+        width: 230px;
+        height: 175px;
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        
+        cursor: pointer;
+        
+}
+.element-content-logo{
+    padding-bottom: 13px;
+    padding-left: 200px;
+    content: '';
+    width: 15px;
+    height: 11px;
+    position: absolute;
+    bottom: -11px;
+}
+
+.element-content-img{
+   
+    width: 220px;
+    aspect-ratio: auto 220 / 156;
+    height: 156px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+        background: var(--background-color-neutral-subtle, #f8f9fa);
+}
+/*  */
+
+/* Окно с изображением с права диаграма */
+.element-content-diagram{ display: block;
+    display: flex;
+    flex-direction: column; /* Располагает дочерние элементы вертикально */
+    align-items: center; /* Выравнивает дочерние элементы по центру */
+    position: relative;
+    float: right;
+    clear: right;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 30px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    width: 230px;
+    height: auto; /* Позволяет высоте адаптироваться к содержимому */
+    padding-top: 5px;
+    cursor: pointer;
+        
+}
+.element-content-logo-diagram{
+   
+    padding-bottom: 43px;
+    padding-left: 200px;
+    content: '';
+    width: 15px;
+    height: 11px;
+    position: absolute;
+    bottom: -11px;
+    
+}
+
+.element-content-img-diagram{
+   
+    margin-top: -2px;
+    width: 220px;
+    aspect-ratio: auto 220 / 110;
+    height: 110px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+        background: var(--background-color-neutral-subtle, #f8f9fa);
+}
+
+.diagram-caption {
+    padding-right: 50px;
+    margin-top: -5px; /* Отступ от изображения до текста */
+    text-align: left; /* Выравнивание текста по центру */
+    font-size: 88.40000000000001%; /* Размер шрифта (можете настроить по своему усмотрению) */
+    color: #000000; /* Цвет текста */
+    margin-bottom: 5px;
+}
+
+.related-project { 
+    display: flex;
+    flex-direction: column; /* Располагает дочерние элементы вертикально */
+    align-items: flex-start; /* Выравнивает дочерние элементы по левому краю */
+    float: right;
+    clear: right;
+    margin-top: 1px;
+    margin-right: 25px;
+    margin-left: 5px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    width: 230px;
+    height: 120px;
+    justify-content: flex-start; /* Выравнивает содержимое по верхнему краю */
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.related-project b {
+    padding-left: 15px;
+}
+
+.related-project-img-text ul {
+    list-style-type: none;
+    padding: 0; /* Убирает отступы */
+    margin: 0; /* Убирает отступы */
+}
+
+.related-project-img-text li {
+    
+    
+    padding-top: 8px;
+    line-height: 1.7em;
+}
+
+.related-project-img-text {
+    display: flex;
+    flex-direction: column; /* Располагает дочерние элементы вертикально */
+    align-items: flex-start; /* Выравнивает дочерние элементы по левому краю */
+    position: relative;
+    float: left;
+    clear: left;
+    font-size: 90%;
+
+
+   
+
+    
+}
+.related-project-logo-1,
+.related-project-logo-2,
+.related-project-logo-3{
+    display: flexbox;
+    flex-direction: column; /* Располагает дочерние элементы вертикально */
+    align-items: center; /* Выравнивает дочерние элементы по центру */
+    position: relative;
+    float: left;
+    clear: left;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-left: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+.span-color-red{
+    color: #ba0000;
+}
+
+/*  */
+
+
+/* Окно с кодом */
+.mw-highlight pre {
+    -moz-tab-size: 4;
+    tab-size: 4;
+    position: relative;
+    background-color: #f8f8f8;
+    color: #333;
+    margin-right: 22px;
+    padding-top: 15px;
+    height: 270px;
+    border: 1px solid var(--border-color-muted, #eaecf0);
+}
+
+.padding-code{
+    margin-left: -200px;
+    line-height: 1.3em;
+    margin-top: -20px;
+}
+
+#Doctype{
+    
+    padding-left: 17px;
+}
+/* Цвет кода */
+.cp{
+    color: #9C6500;
+}
+.nt{
+    color: #008000;
+    font-weight: bold;
+}
+.s{
+    color: #BA2121;
+}
+.o{
+    color: #666666;
+}
+.na{
+    color: #687822;
+}
+/*  */
+
+/* Колонки с примечанием */
+.columns-application{
+    display: flex;
+    justify-content: space-between;
+    font-size: 90%;
+margin-top: -10px;
+    font-family: sans-serif;
+}
+.columns-application-left,
+.columns-application-right{
+    width: 50%;
+    
+}
+.columns-application-right{
+    margin-right: 20px;
+}
+/*  */
+
+.h4-margin{
+margin-top: -7px;
+margin-bottom: -7px;
+}
+.margint-top-plus{
+    margin-top: 10px;
+}
+
+.margint-top{
+    margin-top: -8px;
+}
+.margin-top-left{
+    margin-top: -15px;
+    margin-left: 20px;
+}
+.span-italic{
+    font-style: italic;
+}
+.span-editing-h2{
+    font-weight: normal;
+    line-height: inherit;
+    font-family: sans-serif;
+    margin-right: 24px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.span-text-page {
+    font-style: italic;
+}
+ 
+a { position: relative;
+    z-index: 10;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+a:hover {
+    text-decoration: underline;
+    color: darkblue; /* Можно изменить цвет при наведении */
+}
+.span-b{
+    margin-left: 20px;
+}
+
+:root,.skin-invert,.notheme {
+    --ruwiki-background-color-blue150: #dcebff;
+    --ruwiki-background-color-blue200: #cfe3ff;
+    --ruwiki-background-color-gray: #f5f5f5;
+    --ruwiki-background-color-white: #ffffff; /* Белый цвет */
+    --ruwiki-gradient-color-blue150: rgba(167, 215, 249, 0); /* Начальный цвет с прозрачностью */
+    --ruwiki-gradient-color-blue200: #a7d7f9; 
+}
+/* Страница с текстом */
+.main-text-h1{
+    display: block;
+    position: relative;
+margin-block-start: 1em;
+margin-block-end: 20px; /* Измените это значение для контроля отступа снизу */
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+margin-top: 20px;
+
+direction: ltr;
+font-size: calc(1em * 0.875);
+line-height: 1.6;
+margin-left: 3px;
+overflow: visible;
+    
+        
+}
+
+.main-text-h1>p {
+margin-bottom: -7px;
+
+}
+
+.code {
+    border-radius: 2px;
+    padding: 1px 4px;
+    background-color: var(--background-color-neutral-subtle, #f8f9fa);
+    color: var(--color-emphasized, #000);
+    border: 1px solid var(--border-color-muted, #eaecf0);
+}
+
+.html-bold{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 13.5px;
+}
+
+
+/* СОДЕРЖАНИЯ КОНТЕЙНЕРА СЛЕВА */
+.list-conteiner>ol {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    counter-reset: section; /* Сбрасываем счётчик секций */
+    padding-left: 0; /* Убираем отступы */
+    margin-left: 7px;
+}
+
+
+.list-conteiner>ol>li {
+    margin: 0px ; /* Отступы между элементами */
+    font-size: 13px; /* Размер шрифта */
+}
+
+
+
+.list-conteiner>ol ol {
+        list-style-type: none; /* Убираем маркеры вложенных списков */
+        padding-left: 20px; /* Отступ для вложенных элементов */
+        counter-reset: subsection; /* Сбрасываем счётчик для вложенных секций */
+    }
+
+
+    .list-conteiner>ol > li::before {
+        counter-increment: section; /* Увеличиваем счётчик секций */
+        content: counter(section) ""; /* Контент для отображения счётчика */
+        margin-right: 5px; /* Отступ между номером и текстом */
+        
+        width: 10px; /* Ширина для выравнивания номеров */
+        display: inline-block; /* Инлайн-блочное отображение для выравнивания */
+        text-align: left; /* Выравнивание по левому краю */
+    }
+
+    .list-conteiner>ol ol > li::before {
+    counter-increment: subsection; /* Увеличиваем счётчик вложенных секций */
+    content: counter(section) "." counter(subsection); /* Отображение номера вложенной секции */
+    margin-right: 20px; /* Отступ между номером и текстом */
+    margin-left: 10px;
+    width: 5px; /* Ширина для выравнивания номеров */
+    display: inline-block; /* Инлайн-блочное отображение для выравнивания */
+    text-align: left; 
+    font-weight: normal;}
+
+
+/* Контейнер слева */
+.list-conteiner {
+    white-space: nowrap; /* Текст в ряд */
+    font-size: 13.5px;
+    unicode-bidi: isolate;
+    text-indent: initial;
+    font-family: sans-serif;
+    line-height: 23px; 
+    
+    margin: 15px;
+    border-style: solid;
+    width: 200px;
+    
+    border: 1px solid #ccc;
+    padding: 0.5px;
+    padding-right: 10px;
+    
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    margin-left: 2px;
+        
+    
+    
+}
+
+.list-conteiner>table {
+    transform: translateY(15px);
+    padding-left: 35px;
+    margin-top: -15px;
+
+}
+.table-left {
+    font-size: 13.5px;
+    
+} 
+.td-hide{
+    transform: translateX(-47%);
+    
+}
+.toggle-container-list-conteiner{
+    display: block;
+    
+}
+.toggle-container-list-conteiner li{
+    margin-left: -18px;
+}
+.hidden {
+    display: none;
+  }
+
+.button-td-hide{
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    background-color: transparent; /* Прозрачный фон */
+    border: 0px solid #000; /* Прозрачная кнопка с черной границей */
+    color: #000; /* Цвет текста кнопки */
+    padding-left: 50px ; /* Отступы кнопки */
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+}
+#element-5 {
+    overflow: hidden;
+    max-height: 275px; /* Высота при скрытии */
+    transition: max-height 0s; /* Плавное изменение высоты */
+  }
+  #element-5.expanded {
+    max-height: 18px; /* Высота, когда элемент видим */}
+
+    .highlighted {
+        background: var(--background-color-progressive-subtle, #eaf3ff);
+        transition: background-color 0.5s ease;
+    }
+
+
+
+/* Шрифт контейнера с лева */
+.list-conteiner>p { 
+    text-align:center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: -20px
+    
+} 
+
+
+
+
+
+/* Контейнер с картинками */
+.img-conteiner { 
+    
+        border: 1px solid var(--border-color-base, #a2a9b1);
+        background: var(--background-color-neutral-subtle, #f8f9fa);
+        margin-bottom: .5em;
+        margin-left: 1em;
+        margin-right:25px;
+        padding: .4em;
+        float: right;
+        clear: right;
+        font-size: 75.5%;
+        width: 23.2em;
+        vertical-align: middle;
+        text-align: left;
+        line-height: 1.5em;
+        border-collapse:separate;
+        border-spacing: 2px;
+        
+}
+
+/* Контейнер с картинками который делает все по центру */
+.img-conteiner>div{
+    display: flex;
+    /* justify-content:center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Средняя картинка справа */
+.logo-html {
+    max-width: 80px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+}
+
+/* Большая картинка справа */
+.logo-html1 {
+    max-width: 273px;
+}
+
+.logo-html4 {
+    max-width: 72px;
+    margin-top: 6px;
+    margin-bottom: 1px;
+}
+
+/* Маленькая картинка в низу возле текста */
+.logo-html2 {
+    max-width: 14px;
+    top: 05%; /* Поднимает текст вверх контейнера */
+    left: -7%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Для центрирования текста */
+    
+}
+/* Верхний блок заливка */
+.infobox-above { display: flex;
+    
+    position: relative;
+    width: 300px;
+    height: 200px;
+    font-family: sans-serif;
+    
+    background: var(--ruwiki-background-color-blue200, #cfe3ff);
+    margin: 2px;
+    font-size: 120%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    width: 277px;
+    height: 20px;
+    margin-top: 2.5px;
+    
+}
+
+/* Верхний блок текст с заливкой */
+.infobox-above h2 {position: absolute;
+    top: -60%; /* Поднимает текст вверх контейнера */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Для центрирования текста */
+
+}
+
+
+    
+/* Нижний блок заливка */
+    .infobox-above1 { display: flex;
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background: var(--ruwiki-background-color-blue150, #dcebff);
+        margin: 2px;
+        text-align: center;
+        font-size: 11px;
+        width: 277px;
+        height: 20px;
+        margin-bottom: 3px;
+        
+    }
+/* Нижний блок текст с заливкой */
+   .infobox-above1 h3{
+    position: relative;
+    margin-top: 1.5px;
+    margin-left: 65px;
+    font-weight: normal;
+   
+   }
+   .commons-logo{
+    position: absolute;
+    height: 20px;
+    width: 15px;
+    margin-top: -3px;
+    margin-left: -18px;
+   }
+         
+        
+   
+
+            /* Таблица 1 Столбец шифр жирный */
+            td:first-child, th:first-child {
+                
+                font-weight: bold;
+            
+            }
+            /* Первая строчка второй столбце стиль заливки */
+            .table tr:nth-child(1) td:nth-child(2){
+                display: flex; /* Включение Flexbox */
+                justify-content: center; /* Горизонтальное центрирование */
+                align-items: center;
+                margin-top: 3px;
+              
+                width:38px;
+                height:14px;
+                
+               --ruwiki-background-color-blue150: #dcebff;
+               --ruwiki-background-color-blue200: #cfe3ff;
+               border: 1px solid #dcebff;
+               background-color: #f6f6f6;
+               
+}
+                
+            
+            
+           /* Третья строчка первый столбец поднять текст в верх */
+            .table tr:nth-child(3) td:nth-child(1) {
+                vertical-align: top; /* Поднятие текста вверх */
+                padding-top: 0px; /* Опциональный отступ сверху */
+            }
+        
+            .table tr:nth-child(3) td:nth-child(2){
+            
+                
+            }
+
+            /* Седьма строчка первый столбец Поднять текст в верх */
+            .table tr:nth-child(7) td:nth-child(1){
+                vertical-align: top; /* Поднятие текста вверх */
+                padding-top: 0px; /* Опциональный отступ сверху */
+            }
+
+            /* картинка со стрелочкой */
+            .span-skins{
+                background-image: url(https://ru.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/link-external-small-ltr-progressive.svg?fb64d);
+                background-position: center right;
+                background-repeat: no-repeat;
+                background-size: 0.857em;
+                padding-right: 1em;
+            }
+            
+
+            
+         /*сократить ссылку  */
+            .table tr:nth-child(8) td:nth-child(2){
+                white-space: nowrap;        /* Запрет переноса текста на новую строку */
+                overflow: hidden;           /* Скрыть текст, который не помещается */
+                text-overflow: ellipsis;    /* Добавить многоточие в конце */
+                width: 140px;                /* Фиксированная ширина ячейки */
+                max-width: 140px;            /* Устанавливает максимальную ширину */
+                display: inline-block;      /* Применяет обрезку внутри ячейки */
+                vertical-align: top;  
+                /* изображение */
+                background-image: url(https://ru.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/link-external-small-ltr-progressive.svg?fb64d);
+                background-position: center right;
+                background-repeat: no-repeat;
+                background-size: 0.857em;
+                padding-right: 0.7em;
+            }
+            .table tr:nth-child(8) td:nth-child(3){
+                color: #72777d;
+                padding-right: 2px;
+                
+                
+            }
+            .ref-info{
+                font-size: 90%;
+                cursor:help;
+            
+            }
+            /* Таблица размеры и шрифт */
+            table{
+                font-size: 12.5px;
+                text-indent: initial;
+                font-family: sans-serif;
+                height: 100%;
+                width: 100%;
+            }
+
+
+/* самый верхний контейнер */
+.vector-user-menu-legacy #pt-anonuserpage {
+    color: #54595d;
+}
+
+
+    
+/*  */
+.vector-user-menu-legacy {
+    display: flex;
+    justify-content: flex-end; /* Размещаем элементы справа */
+    align-items: flex-start; /* Выравниваем по верху */
+    padding-top: 0em; /* Отступ сверху */
+    transform: translateY(-0%);
+    margin-right: 18px;
+    
+}
+
+.vector-user-menu-legacy li {
+    font-size: 0.75em;
+    margin-left: 0.40em;
+    line-height: 1.16666667;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-bottom: 0.1em;
+    display: inline-block; /* Делаем элементы в один ряд */
+}
+
+.vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-userpage a {
+    background-position: left 0.33333333em;
+    background-image: url(/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?943a0);
+    background-repeat: no-repeat;
+    background-size: 1.16666667em 1.16666667em;
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+    
+}
+
+/* Убираем маркеры списка */
+.mw-portlet ul {
+    list-style: none;
+}
+
+    
+    
+    
+        
+
+
+
+    .span-nav-conteiner{display: flex; 
+        
+        
+     align-items: center; /* Центрирование по вертикали */
+     justify-content: center;
+        font-size: 13px;
+        font-family: sans-serif;
+        
+        margin-inline-start: 1.6em;
+        margin-inline-end: 0;
+       
+        height: 100%;
+        list-style: none;
+        width: 45px;
+        margin: 0;
+        
+        padding: 7px;
+        padding-top: 15px;
+        gap: 0px;
+       
+    
+       
+        
+        background-color: #ffffff; /* Новый цвет заливки */
+       
+        
+        border-right: 1px solid #cfe3ff; /* Линия справа */
+    }
+    
+
+    .span-nav-conteiner1 {
+        display: flex; /* Используем flex для управления расположением элементов, если нужно */
+        justify-content: space-between; /* Выравнивание элементов по горизонтали */
+        background-image: linear-gradient(
+            to bottom, 
+            var(--ruwiki-background-color-white) 0%, 
+            var(--ruwiki-background-color-blue150) 110%);
+        font-size: 13px;
+        font-family: sans-serif;
+        padding:  10px;
+    
+  
+        margin-inline-start: 1.6em;
+        margin-inline-end: 0;
+        float: left;
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 6px;
+        padding-top: 14px;
+        gap: 0px;
+    
+     border-right: 1px solid #cfe3ff; /* Линия справа */
+        
+        border-bottom: 1px solid #b9d5fc;
+        
+        
+    }
+    
+    .nav-conteiner-centr {
+        
+        margin-bottom: 1px;
+    
+    
+        border-bottom: 1px solid #b9d5fc;
+        
+width: 377.5px;
+    }
+   
+    
+    
+
+/* Навигационная панель */
+
+.nav-conteiner {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(
+        to bottom, 
+        var(--ruwiki-background-color-white) 50%, 
+        var(--ruwiki-background-color-gray) 110%
+    );
+    
+        
+   
+         
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: -8px;
+
+}
+
+
+
+.nav-conteiner-right{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(
+        to bottom, 
+        var(--ruwiki-background-color-white) 57%, 
+        var(--ruwiki-background-color-blue150) 110%);
+    font-size: 13px;
+    font-family: sans-serif;
+    border-bottom: 1px  ;
+    margin-left:auto;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+.nav-conteiner-right>nav>ul {
+    display: flex;
+    
+    list-style: none;
+    
+    margin: 0px;
+    padding: 0px;
+    padding-top: 3px;
+    align-items: center;
+    white-space: nowrap;
+    gap: 0px;
+    border-left: 1.3px  solid #cfe3ff;  /* Линия слева */
+    
+}
+ 
+
+
+.nav-conteiner-right>nav>ul>li>a {
+    display: block;
+    padding:  10px;
+    
+    
+    margin-inline-start: 1.6em;
+    margin-inline-end: 0;
+    float: left;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+   
+    padding: 7px;
+    padding-top: 14px;
+    gap: 0px;
+   
+        
+    border-bottom: 1px solid #b9d5fc;
+        
+    
+    border-right: 1px solid #cfe3ff; /* Линия справа */
+        
+}
+
+.nav-conteiner>nav>ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    align-items: center;
+    
+}
+
+.nav-conteiner>nav>ul>li>a {
+    display: block;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.vector-search-box form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+    font-family: sans-serif;
+    margin: 0.5em 0 0;
+    border: 0;
+    
+}
+
+.vector-search-box-inner {
+    display: block;
+    unicode-bidi: isolate;
+    position: relative;
+    height: 100%;
+    min-width: 5em;
+    width: 20vw;
+    max-width: 20em;
+    padding-right: 1.2em;
+    padding-left: 0.6em;
+    
+    
+}
+
+.search {
+    display: inline;
+    margin-right: -10px;
+    background-image: linear-gradient(
+        to bottom, 
+        var(--ruwiki-background-color-white) 60%, 
+        var(--ruwiki-background-color-gray) 100%
+    );
+    border-bottom: 1px solid #b9d5fc;
+    padding-bottom: 3px;
+    width: 290px;
+   
+}
+/* Окно поиск */
+.vector-search-box-input {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--color-emphasized, #020005);
+    width: 100%;
+    height: 2.15384615em;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-radius: 2px;
+    padding: 5px 2.15384615em 5px 0.4em;
+    box-shadow: inset 0 0 0 1px var(--box-shadow-color-transparent, transparent);
+    font-family: inherit;
+    direction: ltr;
+    transition-property: border-color, box-shadow;
+    transition-duration: 250ms;
+    -webkit-appearance: none;
+    margin: 0px;
+    
+    margin-top: 4px;
+    
+    
+}
+
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+/* Окно поле ввода */
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    padding-block: 1px;
+    padding-inline: 5px;
+}
+
+
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+
+input {
+    
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;}
+
+    input[type="hidden" i] {
+        display: none !important;
+    }
+
+    input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+        overflow-clip-margin: 0px !important;
+        overflow: clip !important;
+    }
+
+    input[type="hidden" i] {
+        appearance: none;
+        background-color: initial;
+        cursor: default;
+        padding: initial;
+        border: initial;
+    }
+/* Убирает крестик в окне поиска */
+    input[type="search"]::-webkit-search-clear-button {
+        display: none;
+      }
+      
+      /* Для Firefox */
+      input[type="search"]::-moz-search-clear-button {
+        display: none;
+      }
+      
+      /* Для Safari */
+      input[type="search"]::-webkit-search-cancel-button {
+        display: none;
+      }
+      
+      /* Для Internet Explorer и Edge */
+      input[type="search"]::-ms-clear {
+        display: none;
+      }
+
+    input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+    }
+
+/* Кнопка поиска */
+    .searchButton {
+        background-color: transparent;
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        right: 1px;
+        min-width: 28px;
+        width: 2.15384615em;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        font-size: 0.8125em;
+        direction: ltr;
+        text-indent: -99999px;
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .searchButton[name='go'] {
+    background-image: url('https://ru.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/search.svg?a45d6');
+    background-size: 16px 16px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    width: 60px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+
+.logo-html3 {
+    position: absolute; /* Абсолютное позиционирование картинки */
+    top: 17px; /* Расстояние от верхнего края контейнера */
+    left: 48px; /* Расстояние от левого края контейнера */
+    
+    width: 14px;
+    
+}
+
+
+
+
+
+
+
+/* Отступ основной страницы */
+.text-page{
+    padding-left: 20px;
+    
+}
+
+
+
+/* Общие стили */
+/* Основные стили для контейнера .page */
+.page {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%; /* Устанавливаем ширину в 100% от окна */
+    box-sizing: border-box;
+    overflow-x: auto; /* Включаем горизонтальную прокрутку при необходимости */
+}
+
+/* Стили для боковой панели .header */
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 14%; /* Ширина боковой панели слева */
+    background-image: linear-gradient(
+        to bottom, 
+        var(--ruwiki-background-color-white) 1%, 
+        var(--ruwiki-background-color-gray) 2%
+    );
+    border: 1.2px solid #cfe3ff;
+    box-sizing: border-box;
+}
+
+/* Стили для основного экрана .section */
+.section {
+    width: 86%; /* Ширина основного экрана */
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        width: 30%; /* Ширина боковой панели для планшетов */
+    }
+
+    .section {
+        width: calc(100% - 30%); /* Основной экран соответственно */
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .page {
+        display: flex; /* Используйте flexbox для расположения элементов в строку */
+        flex-direction: row; /* Элементы располагаются в строку */
+    }
+    
+}
+@media only screen and (max-width: 300px) {
+    .header {
+      width: 100%; /* Ширина боковой панели на очень узких экранах */
+      height: auto; /* Высота автоматически подстраивается под контент */
+      position: absolute; /* Позиционирование относительно ближайшего предка с относительным позиционированием */
+      top: 0; /* Смещаемся вверх */
+      left: 0; /* Слева по умолчанию */
+      z-index: 10; /* Убедитесь, что панель находится поверх другого контента */
+      font-size: 0.8em; /* Уменьшаем размер шрифта для очень узких экранов */
+    }
+  
+    .section {
+      width: 100%; /* Основной экран на очень узких экранах */
+      margin-left: 0; /* Убираем сдвиг */
+    }
+  }
+
+
+   
+/* Подцветка текста */
+.span-header{
+    position: relative; top: 15px;
+    font-family: sans-serif;
+    color: var(--color-subtle, #54595d);
+    
+}
+
+.settings-header{
+     position: relative; top: 15px;
+    font-family: sans-serif;
+    color: var(--color-subtle, #54595d);
+    
+}
+/* цвет и положение картинки шестеренки */
+.settings-header-img{
+   filter: grayscale(100%) brightness(70%);    /* Цвето картинки  */
+    height:17px;
+    width: 17px;
+    margin-left: 15px;
+    transform: translateY(5px);
+    
+    
+    
+    
+}
+
+.Fixed {
+    margin-left: 17px;
+    margin-top: 25px;
+}
+
+    /* Левая колонка  header UL */
+.fixed-ul{
+    display: block;
+    position:static;
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    border-width: 0.5px;
+    transform: translateY(-43px);
+    line-height:19px;  
+    margin-left: 10px;
+    
+    padding: 0;
+    white-space: nowrap;
+    padding-bottom: 15px;
+    font-family: sans-serif; 
+    font-size: 12px;
+    color: #0645ad;
+}
+/* Цвет подчеркивания в колонке слева */
+.fixed-ul::after {
+    content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px; /* Отступ ниже текста */
+            width: 80%;
+            height: 1px; /* Высота подчеркивания */
+            background: linear-gradient(to right, rgba(200, 204, 209, 0) 0%, #c8ccd1 33%, #c8ccd1 66%, rgba(200, 204, 209, 0) 100%);
+            z-index: -1; /* Подчеркивание ниже текста */}
+
+
+        /*Колонка слева  */
+.vector-legacy-sidebar1{
+    display: block;
+    position: relative;
+     list-style-type: none; /* Убираем стандартную нумерацию */
+     background-position: center bottom;
+    
+     border-width: 0.5px;
+     
+     transform: translateY(-64px);
+     line-height:19px;  
+     margin: 28px;
+     padding: 0;
+     white-space: nowrap;
+     padding-bottom: 15px;
+     font-family: sans-serif; 
+     font-size: 12px;
+     color: #0645ad;
+     
+
+    
+            
+}
+
+ 
+
+/*Колонка слева  */
+.vector-legacy-sidebar2 {
+    
+    display: block;
+    
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    
+    background-position: center bottom;
+   
+    border-width: 0.5px;
+   transform: translateY(-88px);
+   
+    line-height:19px;  
+    margin: 28px;
+    padding: 0;
+    white-space: nowrap;
+    padding-bottom: 15px;
+    font-family: sans-serif; 
+    font-size: 12px;
+    color: #0645ad;
+    
+}
+
+
+
+
+/*Колонка слева тип подчеркивания */
+.vector-legacy-sidebar1::after,
+.vector-legacy-sidebar2::after,
+.vector-legacy-sidebar3::after,
+.vector-legacy-sidebar4::after {
+    
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Отступ ниже текста (можно увеличить для лучшего отображения) */
+    width: 100%;
+    height: 1px; /* Высота подчеркивания */
+    background: linear-gradient(to right, rgba(200, 204, 209, 0) 0%, #c8ccd1 33%, #c8ccd1 66%, rgba(200, 204, 209, 0) 100%);
+    z-index: -1; /* Подчеркивание ниже текста */}
+
+
+.vector-legacy-sidebar3{
+    display: block;
+    
+     list-style-type: none; /* Убираем стандартную нумерацию */
+     
+     background-position: center bottom;
+    
+     border-width: 0.5px;
+    transform: translateY(-110px);
+    
+     line-height:19px;  
+     margin: 28px;
+     padding: 0;
+     white-space: nowrap;
+     padding-bottom: 15px;
+     font-family: sans-serif; 
+     font-size: 12px;
+     color: #0645ad;
+}
+
+.vector-legacy-sidebar4{
+
+    display: block;
+        
+         list-style-type: none; /* Убираем стандартную нумерацию */
+         background-position: center bottom;
+         border-width: 0.5px;
+         transform: translateY(-132px);
+         line-height:19px;  
+         margin: 28px;
+         padding: 0;
+         white-space: nowrap;
+         padding-bottom: 15px;
+         font-family: sans-serif; 
+         font-size: 12px;
+         color: #0645ad;
+}
+
+.vector-legacy-sidebar5{
+
+    display: block;
+        
+         list-style-type: none; /* Убираем стандартную нумерацию */
+         background-position: center bottom;
+         border-width: 0.5px;
+         transform: translateY(-155px);
+         line-height:19px;  
+         margin: 28px;
+         padding: 0;
+         white-space: nowrap;
+         padding-bottom: 15px;
+         font-family: sans-serif; 
+         font-size: 12px;
+         color: #0645ad;
+}
+
+
+.sidebar {
+    margin-top: 10px;
+    
+   }
+   .buttonLA{
+    background-image: url(https://ru.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?65418);
+    background-position: left 4px center;
+    background-repeat: no-repeat;
+    background-color: var(--background-color-interactive-subtle, #f8f9fa);
+    background-size: 16px;
+    margin: 4px 0 8px;
+    padding: 4px 8px 4px 26px;
+    margin-top: -5px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    min-height: 32px;
+    max-width: 28rem;
+    border-width: 1px;
+    border-color: #2d2e2f;
+    border-radius: 2px;
+    font-family: inherit;
+    
+    
+   
+   
+    
+   
+    
+}
+/* Модельное окно поиска */
+.modal-content-serch {
+    background: url(https://ru.wikipedia.org/w/extensions/UniversalLanguageSelector/lib/jquery.uls/images/search.svg?ad30e) no-repeat center center;
+    position: relative; /* Устанавливаем контейнер в относительное позиционирование */
+    width: 59.4%;
+    padding-top: 0px;
+    
+    margin-left: 256.5px;
+    margin-top: 197px;
+    margin-bottom: -190px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Добавляем тонкую светлую границу */
+    border-top-left-radius:   4px; /* Закругляем углы */
+    background-color: #fff; /* Фон контейнера */
+}
+
+/* Обводка триугольника */
+.modal-content-serch::before {
+    content: '';
+    position: absolute;
+    left: -11px; /* Увеличиваем отступ на 1px */
+    top: 60%;
+    transform: translateY(-50%);
+    border-top: 11px solid transparent; /* Верхняя сторона треугольника прозрачная */
+    border-bottom: 11px solid transparent; /* Нижняя сторона треугольника прозрачная */
+    border-right: 11px solid #ccc; /* Черная граница */
+    z-index: -1; /* Помещаем под основной элемент */
+
+    /* Создает триугольник по внешней грани */
+}.modal-content-serch::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 60%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+}
+
+/* Убирает обводку окна поиска */
+.modal-content-serch input[type="text"] {
+    
+    padding-left: 40px; /* Добавляем отступ слева, чтобы текст не накладывался на треугольник */
+    border: none; /* Убираем обводку */
+    outline: none; /* Убираем выделение */
+    width: calc(100% - 30px); /* Учитываем отступ при вычислении ширины */
+    box-sizing: border-box; /* Учитываем padding в ширину элемента */
+    
+    
+}
+
+  
+
+
+/* Высота иконки в поиске */
+.uls-search-label {
+    background: url(https://ru.wikipedia.org/w/extensions/UniversalLanguageSelector/lib/jquery.uls/images/search.svg?ad30e) no-repeat center center;
+    background-size: 20px;
+    height: 32px;
+    width: 44px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+    
+    
+
+
+    
+/* Стили для нижнего модального окна */
+.modal {
+    display: none; /* Скрываем окно по умолчанию */
+    position: absolute;
+    z-index: 99;
+    left: -130px;
+    top: 925px;
+    width: 100%;
+    height: 100%;
+    
+ 
+    
+}
+
+/* Содержимое модального окна */
+.modal-content {
+    border-end-end-radius:  3px;
+    top: 925px; /* Центрируем по вертикали */
+    left: -220px; /* Центрируем по горизонтали */
+    background-color: #fbfbfb;
+    font-size: 12px;
+    margin: 15% auto;
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid #ccc;
+    width: 750px; /* Ширина модального окна */
+    max-height: 280px;
+    text-align: left; /* Выравнивание текста */
+    box-sizing: border-box;
+    overflow-y: auto; /* Скроллинг по вертикали, если содержимое выходит за границы */
+    
+}
+
+/* Кнопка закрытия окна */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 0px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для списка языков */
+#language-list {
+    list-style-type: none;
+    padding:0px;
+   
+}
+
+
+#language-list li {
+    padding: 8px;
+    
+   
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 14px;
+    
+}
+
+#language-list h3 {
+    padding-left: 8px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+#language-list ul {
+    
+   
+    margin: 0; /* Важное примечание, чтобы перекрыть другие стили */
+    padding: 0;
+     margin-bottom: 55px;
+    
+}
+#language-list li:hover {
+    background-color: #f1f1f1;
+    
+}
+
+/* Стили для поля поиска */
+#search {
+    width: 100%;
+    height: 37px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.header>div{
+    width: 100%;
+}
+.header-img {
+    transform: translateY(-20px);
+    margin: 20px;
+    margin-top: 22px;
+    max-width: 136px;
+    max-height: 160px;
+}
+
+
+
+/* Положение стобцов в блоке  */
+.row-uls-language-block-BE, .row-uls-language-block-SL{
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    gap: 0px;/* Расстояние между столбцами, можно настроить по своему усмотрению */
+    
+}
+
+
+
+.row-uls-language-block-WW,.row-uls-language-block-AM,.row-uls-language-block-AF {
+    display: grid;
+    grid-template-columns: repeat(2,0.3fr);
+    gap: 0px;
+}
+
+
+.row-uls-language-block-EU,.row-uls-language-block-EN,.row-uls-language-block-ME,.row-uls-language-block-AS,.row-uls-language-block-PT{
+    display: grid;
+    grid-template-columns: repeat(4,0.3fr);
+    gap: 0px;
+    
+}
+
+.row-uls-language-block-PA{
+    display: grid;
+    grid-template-columns: repeat(1,0.3fr);
+    gap: 0px;
+
+}
+/* Надпись править код */
+.edit-links{
+    
+    filter: grayscale(1);
+    padding-left: 5px;
+    margin-left: 20px;
+    margin-top: -3px;
+    display: block;
+    list-style-type: none;
+    font-size: 12px;
+   
+
+}
+/* Картинка карандаш */
+.edit-links a::before{
+    background-image: url(https://ru.wikipedia.org/w/extensions/Wikibase/client/resources/images/edit.svg?34bc5);
+    filter: grayscale(1);
+    opacity: 0.73;
+    content: '';
+     background-repeat: no-repeat; /*делает одним изображением */
+    background-size: 0.625rem 0.625rem;
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-right: 0.125rem;
+    
+}
+/* контейнер Словари и Энциклопедии */
+.box-content{
+    display: flex;
+    flex-direction:row; /* Располагает дочерние элементы вертикально */
+    align-items: flex-start; /* Выравнивает дочерние элементы по левому краю */
+    
+    margin-top: 1px;
+    margin-right: 25px;
+    margin-left: 0px;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    width: 1035px;
+    height: 75px;
+    justify-content: flex-start; /* Выравнивает содержимое по верхнему краю */
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: height 0.1s ease; /* Плавное увеличение высоты */
+}
+
+.box-collom-left{
+    display: flex;
+    flex-direction:row; /* Располагает дочерние элементы вертикально */
+    align-items: center;
+    margin-top: -6px;
+    height: 45px;
+    width: 220px;
+   margin-left: 3px;
+    
+    padding-left: 15px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+    
+}
+.box-collom-right-basic-ul{
+    margin-left: -35px;
+    margin-top: -5px;
+}
+.box-collom-right-secondary-ul{
+    margin-left: -35px;
+    margin-top: -15px;
+}
+
+/* Маленькая точка иконка */
+.point-of-left{
+    margin-bottom: 2px;
+    padding-right: 5px;
+    width: 2px;
+    width: 2px;
+}
+.point-of-right{
+    margin-bottom: 2px;
+    padding-left: 5px;
+    width: 2px;
+    width: 2px;
+}
+
+
+
+.box-collom-right li{
+    display: inline-block;
+    padding-right: 0px;
+    font-size: 90%;
+    
+}
+
+.box-collom-left b{
+    font-size: 90%;
+    margin-top: -5px;
+    
+}
+
+.box-setting-img{
+    padding-right: 5px;
+    width: 14px;
+    height: 14px;
+   
+}
+.box-pencil-img{
+    padding-right: 10px;
+    width: 14px;
+    height: 14px;
+    
+}
+
+.box-catalog{
+    display: flex;
+     /* Располагает дочерние элементы вертикально */
+    align-items: center;
+    margin-left: -235px;
+    margin-top: -12px;
+    height: 30px;
+    width: 1029px;
+    
+   
+    
+   
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+
+.box-catalog b{
+    padding-left: 421px;
+    font-size: 90%;
+}
+
+.btn{ 
+    
+    
+    
+    
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    background-color: transparent; /* Прозрачный фон */
+    border: 0px solid #000; /* Прозрачная кнопка с черной границей */
+    color: #000; /* Цвет текста кнопки */
+    padding: 10px 335px; /* Отступы кнопки */
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+}
+.span-color-blue{
+    color: var(--color-progressive, #36c);
+}
+
+.element {
+    display: none;
+            height: 10px;
+            width: 1029px;
+            background: var(--background-color-neutral-subtle, #f8f9fa);
+            margin-left: -1344px;
+            margin-top: 60px;
+            
+}
+.element b{
+    display: flex;
+            align-items: center; /* Центрирует текст вертикально */
+            padding-left: 7px; /* Отступ слева */
+}
+
+
+.markup-languages{
+    display: flex;
+    flex-direction:row; /* Располагает дочерние элементы вертикально */
+    align-items: flex-start; /* Выравнивает дочерние элементы по левому краю */
+   
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-left: 0px;
+
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-top: none; /* Убираем верхнюю границу */
+
+    width: 1035px;
+    height: 28px;
+    justify-content: flex-start; /* Выравнивает содержимое по верхнему краю */
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: height 0.1s ease; /* Плавное увеличение высоты */
+}
+
+.box-markup-languages{
+    display: flex;
+     /* Располагает дочерние элементы вертикально */
+    align-items: center;
+   margin-left: 3px;
+    margin-top: -6px;
+    height: 30px;
+    width: 1029px;
+    
+   
+    
+   
+    background: var(--ruwiki-background-color-blue200, #cfe3ff);
+}
+
+
+.box-markup-languages b{
+    padding-left: 392px;
+    
+}
+.btn-markup-languages{ 
+    
+    
+    
+    
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    background-color: transparent; /* Прозрачный фон */
+    border: 0px solid #000; /* Прозрачная кнопка с черной границей */
+    color: #000; /* Цвет текста кнопки */
+    padding: 10px 341px; /* Отступы кнопки */
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+}
+
+.element-languages{
+    display: none;
+    height: 10px;
+    width: 1029px;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    margin-left: -1344px;
+    margin-top: 60px;
+}
+.element-languages b{
+    display: flex;
+            align-items: center; /* Центрирует текст вертикально */
+            padding-left: 7px; /* Отступ слева */
+        }
+
+
+ .office-documents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0px;
+    height: 45px;
+    width: 130px;
+   margin-left: -2px;
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+    
+} 
+.office-documents-li-padding {
+   
+    padding-right: 10px;
+}
+
+.office-documents b{
+    padding-left: 40px;
+}
+
+.office-documents-right{
+    display: flex;
+    height: 50px;
+    width: 902px;
+    align-items: center;
+    
+    
+    align-items: center;
+    margin-top: -46px;
+    margin-left: 1029px;
+    
+    height: 30px;
+    width: 898px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.office-documents-right p{
+    margin-top: 40px;
+    margin-left: 4px;
+}
+
+.wellknown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 52px;
+    height: 25px;
+    width: 130px;
+   margin-left: -130px;
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.wellknown b{
+    padding-right: 10px;
+}
+
+.wellknown-right{
+    display: grid;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 1031px;
+    
+    height: 30px;
+    width: 896px;
+    align-items: center;
+    background: #f3f5f7;
+}
+.wellknown-right p{
+    margin-top: 6px;
+    margin-left: 2px;
+}
+
+.span-bold{
+    font-weight: bold;
+}
+.less-known{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 84px;
+    height: 55px;
+    width: 130px;
+   margin-left: -130px;
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+
+.less-known b{
+    padding-left: 60px;
+}
+
+.less-known-li-padding{
+    padding-right: 27px;
+}
+
+.less-known-right{
+    display: flex;
+    
+    width: 902px;
+    align-items: center;
+    
+    
+    align-items: center;
+    margin-top: -46px;
+    margin-left: 1029px;
+    
+    height: 30px;
+    width: 898px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.less-known-right p{
+    margin-top: 45px;
+    margin-left: 4px;
+}
+
+.point-of-left-padding-left-right{
+    margin-bottom: 2px;
+  padding-right: 5px;
+    padding-left: 5px;
+    width: 2px;
+    width: 2px;
+}
+
+.point-of-left-padding-left-right-numbre{
+    margin-bottom: 2px;
+  padding-right: 4px;
+    padding-left: 4px;
+    width: 2px;
+    width: 2px;
+}
+.consortium{
+    display: flex;
+    flex-direction:row; /* Располагает дочерние элементы вертикально */
+    align-items: flex-start; /* Выравнивает дочерние элементы по левому краю */
+   
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-left: 0px;
+
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-top: none; /* Убираем верхнюю границу */
+    background: #fff;
+    width: 1035px;
+    height: 28px;
+    justify-content: flex-start; /* Выравнивает содержимое по верхнему краю */
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: height 0.1s ease; /* Плавное увеличение высоты */
+}
+
+.box-consortium{
+    display: flex;
+    /* Располагает дочерние элементы вертикально */
+   align-items: center;
+  margin-left: 3px;
+   margin-top: -6px;
+   height: 30px;
+   width: 1029px;
+   
+  
+   
+  
+   background: var(--ruwiki-background-color-blue200, #cfe3ff);
+}
+
+.box-consortium b{
+    padding-left: 355px;
+    
+}
+
+.btn-consortium{
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    background-color: transparent; /* Прозрачный фон */
+    border: 0px solid #000; /* Прозрачная кнопка с черной границей */
+    color: #000; /* Цвет текста кнопки */
+    padding: 10px 300px; /* Отступы кнопки */
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+}
+.element-consortium{
+    display: none;
+    height: 10px;
+    width: 1029px;
+    
+    margin-left: -1303px;
+    margin-top: 60px;
+}
+.element-consortium b{
+    display: flex;
+            align-items: center; /* Центрирует текст вертикально */
+            padding-left: 7px; /* Отступ слева */
+        }
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0px;
+    height: 341.5px;
+    width: 115px;
+   margin-left: -2px;
+    
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+    
+} 
+.products-text{
+    margin-top: -195px;
+}
+.products-list-1{
+    padding-left: 20px;
+}
+.products-list-2{
+    padding-left: 4.3px;
+}
+
+.ghost {
+    color: var(--ruwiki-background-color-blue150, #dcebff);
+}
+
+.recommendations{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: -25px;
+    height: 121px;
+    width: 140px;
+   margin-left: 259px;
+    
+    
+    padding-top: 5px;
+    background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+.recommendations b{
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+.recommendations-right{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: -145px;
+    margin-left: 1160px;
+    padding-top: 5px;
+    
+}
+.OOCO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: -13px;
+    height: 24px;
+    width: 140px;
+   margin-left: 259px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+
+}
+
+.OOCO b{
+    padding-left: 75px;
+    cursor: help;
+}
+
+.OOCO-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -25px;
+    margin-left: 915px;
+    padding-top: 5px;
+    width: 769px;
+    height: 30px;
+    background: #f3f5f7;
+    padding-left: 2px;
+    
+    
+}
+.OOCO-right li{
+    margin-top: -3px;
+}
+
+.work-projects{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2px;
+    height: 34px;
+    width: 140px;
+   margin-left: 259px;
+   padding-top: 11px;
+   
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+
+.work-projects b{
+    padding-right: 5px;
+}
+
+.work-projects-right{
+     display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -47px;
+    margin-left: 1175px;
+    
+    width: 769px;
+    height: 30px;
+    
+    
+}
+
+.manuals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 19px;
+    height: 24px;
+    width: 140px;
+   margin-left: 259px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+
+}
+
+.manuals b{
+padding-left: 31px;
+}
+
+.manuals-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -29px;
+    margin-left: 1174px;
+    padding-top: 5px;
+    width: 771px;
+    height: 24px;
+    background: #f3f5f7;
+    
+    
+    
+}
+.manuals-right li{
+    padding-left: 2px;
+    margin-top: -2px;
+}
+
+.initiatives{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2px;
+    height: 24px;
+    width: 140px;
+   margin-left: 259px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+
+}
+
+.initiatives b{
+    padding-left: 32px;
+}
+
+.initiatives-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -26px;
+    margin-left: 885px;
+    
+   
+}
+
+.withdrawn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 4.5px;
+    height: 44px;
+    width: 140px;
+   margin-left: 259px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+.withdrawn-1-line{
+    padding-left: 24px;
+}
+.withdrawn-2-line{
+    padding-right: 8px;
+}
+
+.withdrawn-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -49px;
+    margin-left: 1174px;
+    padding-top: 5px;
+    width: 771px;
+    height: 44px;
+    background: #f3f5f7;
+}
+
+.withdrawn-right li{
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+.obsolete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 1.5px;
+    height: 24px;
+    width: 140px;
+   margin-left: 259px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+.obsolete b{
+    padding-left: 38px;
+}
+.obsolete-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -23px;
+    margin-left: 430px;
+}
+
+.organizations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 349px;
+    height: 112.5px;
+    width: 115px;
+   margin-left: -115px;
+    
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.Organizations-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 394px;
+    margin-left: -101px;
+    font-size: 90%;
+}
+
+.organizations b{
+   
+    padding-top: 30px;
+}
+.organizations-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -55px;
+    margin-left: 1032px;
+    padding-top: 5px;
+    width: 913px;
+    height: 24px;
+    background: #f3f5f7;
+}
+.organizations-right li{
+padding-left: 4px;
+}
+.working-groups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 1.5px;
+    max-height: 24px;
+    width: 218px;
+   margin-left: 337px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+.working-groups b{
+    margin-top: -30px;
+    padding-left: 90px;
+}
+.working-groups-right{
+
+    display: flex;
+        
+        
+        list-style-type: none;
+        margin-top: -26px;
+        margin-left: 895px;
+}
+
+.community-and-business{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 5px;
+    height: 24px;
+    width: 218px;
+   margin-left: 337px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+
+.community-and-business b{
+    margin-top: -30px;
+    padding-left: 1px;
+}
+.community-and-business-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -29px;
+    margin-left: 1252px;
+    padding-top: 5px;
+    
+    width: 693px;
+    height: 24px;
+    background: #f3f5f7;
+}
+.community-and-business-right li{
+    margin-left: 2px;
+    margin-top: -2px;
+}
+.closed-groups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2px;
+    height: 24px;
+    width: 218px;
+   margin-left: 337px;
+   padding-top: 5px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+.closed-groups b{
+     margin-top: -30px;
+    padding-left: 55px;
+}
+.closed-groups-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -31px;
+    margin-left: 1072px;
+    padding-top: 5px;
+    
+    
+    
+}
+
+.BY{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 469px;
+    height: 53.5px;
+    width: 115px;
+   margin-left: -115px;
+    
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+
+.BY b{
+    padding-top: 13px;
+    padding-left: 69px;
+    cursor: help;
+}
+
+.BY-right{
+    display: grid;
+    align-items: center;
+    margin-top: -38px;
+    margin-left: 1032px;
+    list-style-type: none;
+    height: 28px;
+    width: 913px;
+    align-items: center;
+    background: #f3f5f7;
+}
+.BY-right li{
+    
+    margin-left: 4px;
+}
+
+.by-browsers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 2px;
+    
+    padding-bottom: 4px;
+   margin-left: 209px;
+   height: 24px;
+    width: 90px;
+   background: var(--background-color-progressive-subtle, #eaf3ff);
+}
+.by-browsers li{
+    margin-top: 3px;
+}
+.by-browsers-right{
+    display: flex;
+    
+    
+    list-style-type: none;
+    margin-top: -32px;
+    margin-left: 1045px;
+    padding-top: 5px;
+}
+
+.Conferences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 530px;
+    height: 25px;
+    width: 115px;
+   margin-left: -115px;
+    
+    font-size: 90%;
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.Conferences b{
+    margin-left: -5px;
+}
+.Conferences-right{
+    display: grid;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 1032px;
+    list-style-type: none;
+    height: 30px;
+    width: 913px;
+    align-items: center;
+    background: #f3f5f7;
+}
+.Conferences-right li{
+    margin-left: 4px;
+}
+
+.standards{
+    display: flex;
+    flex-direction:row; /* Располагает дочерние элементы вертикально */
+    align-items: flex-start; /* Выравнивает дочерние элементы по левому краю */
+   
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-left: 0px;
+
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-top: none; /* Убираем верхнюю границу */
+
+    width: 1035px;
+    height: 28px;
+    justify-content: flex-start; /* Выравнивает содержимое по верхнему краю */
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: height 0.1s ease; /* Плавное увеличение высоты */
+}
+
+.box-standards{
+    display: flex;
+    /* Располагает дочерние элементы вертикально */
+   align-items: center;
+  margin-left: 3px;
+   margin-top: -6px;
+   height: 30px;
+   width: 1029px;
+   
+  
+   
+  
+   background: var(--ruwiki-background-color-blue200, #cfe3ff);
+}
+
+.box-standards b{
+    padding-left: 440px;
+    
+}
+
+.btn-standards{
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    background-color: transparent; /* Прозрачный фон */
+    border: 0px solid #000; /* Прозрачная кнопка с черной границей */
+    color: #000; /* Цвет текста кнопки */
+    padding: 10px 386px; /* Отступы кнопки */
+    font-size: 12px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+}
+.toggle-text{
+    color: blue;
+}
+.brackets {
+    color: black; /* Черные скобки */}
+    .brackets, .toggle-text {
+        margin: 0;
+        padding: 0;}
+
+
+        .element-standards{
+            display: none;
+            
+        }
+        .element-standards{
+
+            
+        display: none;
+            height: 10px;
+            width: 1029px;
+            
+            margin-left: -1344px;
+            margin-top: 60px;
+            
+}
+
+.category-standards{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: -47px;
+    list-style-type: none;
+    height: 30px;
+    width: 1029px;
+    align-items: center;
+    font-size: 90%;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.category-standards li{
+    padding-left: 328px;
+}
+
+.numbers-from-1-to-9999{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 157px;
+    height: 118px;
+    width: 70px;
+   margin-left: -720.5px;
+    
+    
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.span-numbers-from-1-to-9999{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: -310px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.numbers-from-1-to-9999-right{
+ display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+   margin-top: 155px;
+   margin-left: -34px;
+   
+}
+
+.numbers-from-10000-to-19999{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 274px;
+    height: 139.7px;
+    width: 70px;
+   margin-left: -991.5px;
+    
+    
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+
+.span-numbers-from-10000-to-19999{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: -30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.numbers-from-10000-to-19999-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 274px;
+    margin-left: 2px;
+    list-style-type: none;
+    height: 144.7px;
+    width: 957px;
+    align-items: start;
+    background: #f3f5f7;
+}
+.numbers-from-10000-to-19999-right ul{
+    margin-left: -36px;
+    margin-top: 2px;
+}
+.numbers-from-20000{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 466px;
+    height: 38px;
+    width: 70px;
+   margin-left: -1029px;
+    
+    
+    padding-top: 5px;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.span-numbers-from-20000{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    margin-left: -35px;
+    font-weight: bold;
+    text-align: right;
+}
+.numbers-from-20000-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 464px;
+    margin-left: -35px;
+    list-style-type: none;
+    
+    align-items: start;
+    
+}
+.list-of-articles{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 349px;
+    margin-left: -1029px;
+    list-style-type: none;
+    height: 30px;
+    width: 1029px;
+    
+    font-size: 90%;
+    background: var(--ruwiki-background-color-blue150, #dcebff);
+}
+.list-of-articles ul{
+    margin-left: 280px;
+}
+/* табличка внизу страницы */
+.sign-at-the-end-of-the-page{
+    height: 55px;
+    width: 1035px;
+    list-style-type: none;
+    margin-top: 15px;
+    text-align: left;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    background-color: var(--background-color-neutral-subtle, #f8f9fa);
+}
+.sign-at-the-end-of-the-page ul{
+    display: flex;
+    
+    margin-top:5px ;
+    margin-left: -35px;
+    list-style: none;
+    
+   
+}
+.end-of-the-page-ul{
+    transform: translateY(-15px);
+}
+
+.sign-at-the-end-of-the-page-li-1{
+    margin-right: 6px;
+}
+
+.sign-at-the-end-of-the-page-li-2,
+.sign-at-the-end-of-the-page-li-3,
+.sign-at-the-end-of-the-page-li-4,
+.sign-at-the-end-of-the-page-li-5,
+.sign-at-the-end-of-the-page-li-6,
+.sign-at-the-end-of-the-page-li-7,
+.sign-at-the-end-of-the-page-li-8{
+
+    display: inline-block;
+    line-height: 1.25em;
+    margin: 0.125em 0;
+    border-left: 1px solid var(--border-color-base, #a2a9b1);
+    padding: 0 0.5em;
+      
+}
+/*  */
+
+.box-setting-img-markup-languages,
+.box-setting-img-Consortium,
+.box-setting-img-Standards{
+    padding-left: 15px;
+   padding-top: 7px;
+    width: 14px;
+    height: 14px;
+   
+}
+/* Конец страницы */
+.end-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: -21px;
+    height: 205px;
+    width: 1235px;
+background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+    border-top: 1.2px solid #cfe3ff;
+    font-size: 75%;
+    
+} 
+.date-of-creation{
+ margin-top: 25px;
+}
+
+.Creative-Commons-p{
+    margin-top: 0px;
+    line-height: 17px;
+}
+.Privacy-Policy-p{
+    margin-top: 5px;
+}
+.Mobile-version-p{
+
+}
+    
+.end-page p{
+   
+    margin-left: 20px;
+}
+/*          */
+
+/* Изображения конец страницы */
+
+.end-page-img-1{
+    display: flex;
+    border: 1px solid var(--border-color-base, #a2a9b1);;
+    border-radius: 2px;
+
+    vertical-align: middle;
+    width: 94px;
+    align-items: center;
+    overflow: clip;
+    height: 41px;
+    background-color: #f8f9fa;
+    
+    margin-top: -26px;
+    margin-left: 761.5px;
+}
+.pulse_arc-img{
+    margin-left: 10px;
+}
+.end-page-img-2{
+    display: flex;
+    border: 1px solid var(--border-color-base, #a2a9b1);;
+    border-radius: 2px;
+
+    vertical-align: middle;
+    width: 94px;
+    align-items: center;
+    overflow: clip;
+    height: 41px;
+    background-color: #f8f9fa;
+    padding-left: 6px;
+    margin-top: -42.5px;
+    margin-left: 860px;
+}
+
+
+.end-page-img-3{
+    display: flex;
+    border: 1px solid var(--border-color-base, #a2a9b1);;
+    border-radius: 2px;
+
+    vertical-align: middle;
+    width: 94px;
+    align-items: center;
+    overflow: clip;
+    height: 41px;
+    background-color: #f8f9fa;
+    padding-left: 6px;
+    margin-top: -42.5px;
+    margin-left: 965px;
+}
