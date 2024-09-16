@@ -36,6 +36,7 @@ search.onkeyup = function() {
 }
 
 
+
 function toggleElement() {
     var container = document.getElementById("toggle-container");
     var button = document.querySelector(".btn");
@@ -186,3 +187,25 @@ function highlightSection(event, sectionId) {
     // Переходим к разделу
     section.scrollIntoView({ behavior: 'smooth' });
 }
+
+// кнопка меню
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    const toggleButton = document.querySelector('.toggle-header-btn');
+    const mainContent = document.querySelector('.main-content');
+
+    // Функция для открытия/закрытия панели
+    function toggleHeader() {
+        header.classList.toggle('open');
+    }
+
+    // Функция для закрытия панели при клике вне её области
+    function closeHeader(event) {
+        if (!header.contains(event.target) && !toggleButton.contains(event.target)) {
+            header.classList.remove('open');
+        }
+    }
+
+    toggleButton.addEventListener('click', toggleHeader);
+    document.addEventListener('click', closeHeader);
+});
