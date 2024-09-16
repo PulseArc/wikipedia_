@@ -1200,50 +1200,342 @@ button, input, optgroup, select, textarea {
     );
     border: 1.2px solid #cfe3ff;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
+.toggle-header-btn {
+    display: none; /* Кнопка скрыта на больших экранах */
+    margin-top: 5px;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    width: 50px;
+    height: 40px;
+    z-index: 100; /* Устанавливаем высокую глубину, чтобы кнопка всегда была сверху */
+}
+.toggle-header-btn img{
+    width: 25px;
+    height: 25px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
 /* Стили для основного экрана .section */
 .section {
     width: 86%; /* Ширина основного экрана */
     box-sizing: border-box;
+    min-width: 200px;
+   
 }
+/* Медиазапрос для экранов с шириной менее 700px */
+@media (max-width: 800px) {
+    .columns-application {
+        flex-direction: column; /* Колонки одна под другой */
+    }
 
-@media only screen and (max-width: 900px) {
+    .columns-application-left,
+    .columns-application-right {
+        width: 100%; /* Колонки занимают всю ширину */
+        margin-right: 0; /* Убираем отступы справа */
+    }
+}
+/*  */
+@media (max-width: 1111px) {
     .header {
-        width: 30%; /* Ширина боковой панели для планшетов */
+        background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+        width: 0;
+        opacity: 0;
+        overflow-y: scroll;
+        position: fixed; /* Фиксируем панель на экране */
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        padding-left: 50px;
+        height: 100%; /* Делаем её растягиваемой на весь экран */
+        z-index: 98;
+        
     }
 
-    .section {
-        width: calc(100% - 30%); /* Основной экран соответственно */
+    .toggle-header-btn {
+        display: block; /* Показываем кнопку на маленьких экранах */
     }
-}
 
-@media only screen and (min-width: 601px) {
-    .page {
-        display: flex; /* Используйте flexbox для расположения элементов в строку */
-        flex-direction: row; /* Элементы располагаются в строку */
+    .header.open {
+        
+        width: 30%; /* Разворачиваем панель на весь экран */
+        opacity: 1;
     }
+    .header.open + .toggle-header-btn {
+        display: none; /* Скрываем кнопку, когда панель открыта */
+    }
+
     
 }
-@media only screen and (max-width: 300px) {
+@media (max-width: 1111px) {
+    .header-img {
+    min-width: 180px!important;
+        min-height: 180px !important;
+        margin-left: 20px!important;
+        
+    }
+}
+@media (max-width: 1111px) {
+    .fixed-ul,
+    .vector-legacy-sidebar1,
+    .vector-legacy-sidebar2,
+    .vector-legacy-sidebar3,
+    .vector-legacy-sidebar4,
+    .vector-legacy-sidebar5{
+        font-size: 14px !important;
+        line-height: 30px !important; 
+    }
+}
+@media (max-width: 1111px) {
+    .span-header,.settings-header {
+        font-size: 22px !important;
+        
+    }
+}
+
+/* 1024 */
+@media (max-width: 1024px) {
     .header {
-      width: 100%; /* Ширина боковой панели на очень узких экранах */
-      height: auto; /* Высота автоматически подстраивается под контент */
-      position: absolute; /* Позиционирование относительно ближайшего предка с относительным позиционированием */
-      top: 0; /* Смещаемся вверх */
-      left: 0; /* Слева по умолчанию */
-      z-index: 10; /* Убедитесь, что панель находится поверх другого контента */
-      font-size: 0.8em; /* Уменьшаем размер шрифта для очень узких экранов */
+        background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+        width: 0;
+        opacity: 0;
+        overflow-y: scroll;
+        position: fixed; /* Фиксируем панель на экране */
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        padding-left: 50px;
+        height: 100%; /* Делаем её растягиваемой на весь экран */
+        z-index: 98;
+        
     }
-  
-    .section {
-      width: 100%; /* Основной экран на очень узких экранах */
-      margin-left: 0; /* Убираем сдвиг */
+
+    .toggle-header-btn {
+        display: block; /* Показываем кнопку на маленьких экранах */
     }
-  }
 
+    .header.open {
+        
+        width: 30%; /* Разворачиваем панель на весь экран */
+        opacity: 1;
+    }
+    .header.open + .toggle-header-btn {
+        display: none; /* Скрываем кнопку, когда панель открыта */
+    }
 
-   
+    
+}
+@media (max-width: 1024px) {
+    .header-img {
+    min-width: 180px!important;
+        min-height: 180px !important;
+        margin-left: 20px!important;
+        
+    }
+}
+@media (max-width: 1024px) {
+    .fixed-ul,
+    .vector-legacy-sidebar1,
+    .vector-legacy-sidebar2,
+    .vector-legacy-sidebar3,
+    .vector-legacy-sidebar4,
+    .vector-legacy-sidebar5{
+        font-size: 14px !important;
+        line-height: 30px !important; 
+    }
+}
+@media (max-width: 1024px) {
+    .span-header,.settings-header {
+        font-size: 22px !important;
+        
+    }
+}
+    
+/* 908 */
+@media (max-width: 908px) {
+    .header {
+        background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+        width: 0;
+        opacity: 0;
+        overflow-y: scroll;
+        position: fixed; /* Фиксируем панель на экране */
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        padding-left: 50px;
+        height: 100%; /* Делаем её растягиваемой на весь экран */
+        z-index: 98;
+        
+    }
+
+    .toggle-header-btn {
+        display: block; /* Показываем кнопку на маленьких экранах */
+    }
+
+    .header.open {
+        
+        width: 35%; /* Разворачиваем панель на весь экран */
+        opacity: 1;
+    }
+    .header.open + .toggle-header-btn {
+        display: none; /* Скрываем кнопку, когда панель открыта */
+    }
+
+    
+}
+@media (max-width: 908px) {
+    .header-img {
+    min-width: 180px!important;
+        min-height: 180px !important;
+        margin-left: 20px!important;
+        
+    }
+}
+@media (max-width: 908px) {
+    .fixed-ul,
+    .vector-legacy-sidebar1,
+    .vector-legacy-sidebar2,
+    .vector-legacy-sidebar3,
+    .vector-legacy-sidebar4,
+    .vector-legacy-sidebar5{
+        font-size: 14px !important;
+        line-height: 30px !important; 
+    }
+}
+@media (max-width: 908px) {
+    .span-header,.settings-header {
+        font-size: 22px !important;
+        
+    }
+}
+
+/* 800 */
+
+@media (max-width: 800px) {
+    .header {
+        background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+        width: 0;
+        opacity: 0;
+        overflow-y: scroll;
+        position: fixed; /* Фиксируем панель на экране */
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        padding-left: 50px;
+        height: 100%; /* Делаем её растягиваемой на весь экран */
+        z-index: 98;
+        
+    }
+
+    .toggle-header-btn {
+        display: block; /* Показываем кнопку на маленьких экранах */
+    }
+
+    .header.open {
+        
+        width: 40%; /* Разворачиваем панель на весь экран */
+        opacity: 1;
+    }
+    .header.open + .toggle-header-btn {
+        display: none; /* Скрываем кнопку, когда панель открыта */
+    }
+
+    
+}
+@media (max-width: 800px) {
+    .header-img {
+    min-width: 180px!important;
+        min-height: 180px !important;
+        margin-left: 20px!important;
+        
+    }
+}
+@media (max-width: 800px) {
+    .fixed-ul,
+    .vector-legacy-sidebar1,
+    .vector-legacy-sidebar2,
+    .vector-legacy-sidebar3,
+    .vector-legacy-sidebar4,
+    .vector-legacy-sidebar5{
+        font-size: 14px !important;
+        line-height: 30px !important; 
+    }
+}
+@media (max-width: 800px) {
+    .span-header,.settings-header {
+        font-size: 22px !important;
+        
+    }
+}
+
+/* 762 */
+@media (max-width: 762px) {
+    .header {
+        background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+        width: 0;
+        opacity: 0;
+        overflow-y: scroll;
+        position: fixed; /* Фиксируем панель на экране */
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        padding-left: 50px;
+        height: 100%; /* Делаем её растягиваемой на весь экран */
+        z-index: 98;
+        
+    }
+
+    .toggle-header-btn {
+        display: block; /* Показываем кнопку на маленьких экранах */
+    }
+
+    .header.open {
+        
+        width: 90%; /* Разворачиваем панель на весь экран */
+        opacity: 1;
+    }
+    .header.open + .toggle-header-btn {
+        display: none; /* Скрываем кнопку, когда панель открыта */
+    }
+
+    
+}
+@media (max-width: 762px) {
+    .header-img {
+    min-width: 200px!important;
+        min-height: 200px !important;
+        margin-left: 20px!important;
+        
+    }
+}
+@media (max-width: 762px) {
+    .fixed-ul,
+    .vector-legacy-sidebar1,
+    .vector-legacy-sidebar2,
+    .vector-legacy-sidebar3,
+    .vector-legacy-sidebar4,
+    .vector-legacy-sidebar5{
+        font-size: 18px !important;
+        line-height: 30px !important; 
+    }
+}
+@media (max-width: 762px) {
+    .span-header,.settings-header {
+        font-size: 26px !important;
+        
+    }
+    .buttonLA{
+        width: 200px!important;
+        height:40px !important;
+        font-size:20px !important;
+    }
+    .edit-links{font-size:20px!important;
+    }
+}
+
 /* Подцветка текста */
 .span-header{
     position: relative; top: 15px;
@@ -1462,19 +1754,17 @@ button, input, optgroup, select, textarea {
     
 }
 /* Модельное окно поиска */
-.modal-content-serch {
+.modal-content-serch {display: flex;
     background: url(https://ru.wikipedia.org/w/extensions/UniversalLanguageSelector/lib/jquery.uls/images/search.svg?ad30e) no-repeat center center;
-    position: relative; /* Устанавливаем контейнер в относительное позиционирование */
-    width: 59.4%;
-    padding-top: 0px;
-    
-    margin-left: 256.5px;
-    margin-top: 197px;
-    margin-bottom: -190px;
+    position: relative;
+    top: 129px;
+    width: 750px;; /* Увеличено для удобства */
+    margin: 10px auto; /* Центрируем по горизонтали */
+    padding: 0px; /* Увеличено для пространства */
     box-sizing: border-box;
-    border: 1px solid #ccc; /* Добавляем тонкую светлую границу */
-    border-top-left-radius:   4px; /* Закругляем углы */
-    background-color: #fff; /* Фон контейнера */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
 /* Обводка триугольника */
@@ -1487,7 +1777,7 @@ button, input, optgroup, select, textarea {
     border-top: 11px solid transparent; /* Верхняя сторона треугольника прозрачная */
     border-bottom: 11px solid transparent; /* Нижняя сторона треугольника прозрачная */
     border-right: 11px solid #ccc; /* Черная граница */
-    z-index: -1; /* Помещаем под основной элемент */
+    z-index: -1;  /* Помещаем под основной элемент */
 
     /* Создает триугольник по внешней грани */
 }.modal-content-serch::after{
@@ -1537,10 +1827,11 @@ button, input, optgroup, select, textarea {
 /* Стили для нижнего модального окна */
 .modal {
     display: none; /* Скрываем окно по умолчанию */
-    position: absolute;
-    z-index: 99;
+    position: fixed;
+    z-index: 1000;
     left: -130px;
-    top: 925px;
+    top: 0px;
+    
     width: 100%;
     height: 100%;
     
@@ -1550,21 +1841,15 @@ button, input, optgroup, select, textarea {
 
 /* Содержимое модального окна */
 .modal-content {
-    border-end-end-radius:  3px;
-    top: 925px; /* Центрируем по вертикали */
-    left: -220px; /* Центрируем по горизонтали */
     background-color: #fbfbfb;
     font-size: 12px;
-    margin: 15% auto;
-    padding: 10px;
-    padding-left: 30px;
+    margin: 10% auto;
+    padding: 20px;
     border: 1px solid #ccc;
-    width: 750px; /* Ширина модального окна */
+    width: 750px;
     max-height: 280px;
-    text-align: left; /* Выравнивание текста */
     box-sizing: border-box;
-    overflow-y: auto; /* Скроллинг по вертикали, если содержимое выходит за границы */
-    
+    overflow-y: auto;
 }
 
 /* Кнопка закрытия окна */
@@ -1599,6 +1884,7 @@ button, input, optgroup, select, textarea {
     font-size: 14px;
     
 }
+
 
 #language-list h3 {
     padding-left: 8px;
