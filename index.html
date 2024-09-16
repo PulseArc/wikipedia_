@@ -137,7 +137,7 @@
             </ol>
 
         </div>
-        <button class="toggle-header-btn"><img src="https://ru.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&lang=ru&skin=minerva&version=y8q4z" alt="#"></button>
+        
         <div class="section">
             <!-- Это модельное окно оно находится отдельно от кнопки -->
             <div id="modal" class="modal">
@@ -1201,7 +1201,23 @@
 
 
             </div>
-
+            <div class="gray-overlay"><button class="toggle-header-btn"><img src="https://ru.m.wikipedia.org/w/load.php?modules=skins.minerva.icons.wikimedia&image=menu&format=original&lang=ru&skin=minerva&version=y8q4z" alt="#"></button> 
+                <img class="gray-overlay-img" src="https://ru.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-ru.svg" alt="Википедия" width="120" height="20" style="width: 7.5em; height: 1.25em;">
+                <div id="simpleSearch" class="vector-search-box-inner"
+                data-search-loc="header-navigation">
+                <input class="vector-search-box-input" type="search" name="search"
+                    placeholder="Искать в Википедии" aria-label="Искать в Википедии"
+                    autocapitalize="sentences" title="Искать в Википедии [alt-shift-f]"
+                    accesskey="f" id="searchInput">
+                <input type="hidden" name="title" value="Special:Search">
+                <!-- Обновлено значение title -->
+                <input id="mw-searchButton" class="searchButton mw-fallbackSearchButton"
+                    type="submit" name="fulltext"
+                    title="Найти страницы, содержащие указанный текст" value="Найти">
+                <input id="searchButton" class="searchButton" type="submit" name="go"
+                    title="Перейти к странице, имеющей в точности такое название"
+                    value="Перейти">
+            </div> </div>
             <h1 class="h1">HTML</h1>
 
             <div class="under-heading-h1">
