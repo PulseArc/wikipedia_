@@ -209,3 +209,8 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButton.addEventListener('click', toggleHeader);
     document.addEventListener('click', closeHeader);
 });
+
+
+document.getElementById('redirectToSearch').addEventListener('click', function () {
+    window.location.href = 'search.html'; // Укажите здесь страницу с формой поиска
+});
