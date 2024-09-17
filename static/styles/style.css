@@ -1168,6 +1168,23 @@ button, input, optgroup, select, textarea {
 }
 
 
+/* Основные стили */
+
+.redirect-search-btn {
+    display: none;
+    
+    background-color: transparent; /* Сделать фон кнопки прозрачным */
+    
+    border: none;
+    
+    cursor: pointer;
+}
+.redirect-search-btn-img{
+    height: 20px;
+    width: 20px;
+}   
+
+
 
 
 
@@ -1231,6 +1248,7 @@ button, input, optgroup, select, textarea {
     min-width: 200px;
    
 }
+
 /* Медиазапрос для экранов с шириной менее 700px */
 @media (max-width: 800px) {
     .columns-application {
@@ -1278,7 +1296,11 @@ button, input, optgroup, select, textarea {
         position: relative; /* Или absolute, в зависимости от вашего макета */
         left: 0;
     }
-    }
+    
+}
+    /* Добавьте стили для других элементов, если они становятся скрытыми */
+
+    
     @media (max-width: 800px) {
         .vector-search-box-inner{
             
@@ -1304,7 +1326,7 @@ button, input, optgroup, select, textarea {
         .vector-search-box-inner{
             
         margin-top: -55px;
-        margin-left: 200px;
+        margin-left: 205px;
         
         position: relative; /* Или absolute, в зависимости от вашего макета */
         left: 0;
@@ -1312,12 +1334,24 @@ button, input, optgroup, select, textarea {
     }
     @media (max-width: 624px) {
         .vector-search-box-inner{
-            width: 30%;
+            width: 55%;
         margin-top: -55px;
         margin-left: 200px;
         
         position: relative; /* Или absolute, в зависимости от вашего макета */
         left: 0;
+        }
+    }
+    @media (max-width: 600px) {
+        .redirect-search-btn {
+            display: inline-block;
+            transform: translateY(-50px);
+            margin-left: calc(100% - 50px); /* Позиционирует кнопку относительно ширины экрана */
+        }
+    
+        /* Скрываем поиск, который встроен на страницу */
+        .search {
+            display: none;
         }
     }
 

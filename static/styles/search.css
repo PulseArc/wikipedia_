@@ -1,0 +1,67 @@
+.vector-search-box-input {margin-left: 
+    60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--color-emphasized, #0b0bbe);
+    
+    height: 2.55384615em;}
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+    .search {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .vector-search-box-input {
+        flex: 1;
+        margin-right: 5px;
+    }
+
+    .searchButton {
+        width: 90px;
+    }
+}
+
+/* Стили для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .search {
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .vector-search-box-input {
+        flex: 1;
+        margin-right: 15px;
+    }
+
+    .searchButton {
+        width: 110px;
+    }
+}
+
+/* Стили для десктопов */
+@media (min-width: 1025px) {
+    .search {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .vector-search-box-input {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .searchButton {
+        width: 120px;
+    }
+}
