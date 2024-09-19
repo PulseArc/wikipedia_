@@ -1,9 +1,33 @@
-.vector-search-box-input {margin-left: 
-    60px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: var(--color-emphasized, #0b0bbe);
+.search{
+    display: flex;
+    width: 100%;
+    width: 700px;
+    height: 60px;
+    background-color: #606060;
+}
+.vector-search-box-input {
+    margin-left: 60px;
+    background-color: rgba(255, 255, 255, 0.8); /* Больше прозрачности */
+    border: 1px solid #a7d7f9; /* Светло-голубая рамка */
+    color: #0b0bbe; /* Темно-синий цвет текста */
+    border-radius: 4px; /* Округленные углы для современного стиля */
+    padding: 5px 30px; /* Внутренний отступ для удобства */
+    height: 2.6em; /* Чуть увеличена высота */
+    transition: background-color 0.3s ease; /* Плавный переход фона при фокусе */
+}
+
+.vector-search-box-input:focus {
+    background-color: #fff; /* Полностью белый фон при фокусе */
+    border-color: #0b0bbe; /* Более контрастная рамка при фокусе */
+}
+.searchButton {
+    width: 90px;
+    height: 36px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #a7d7f9;
     
-    height: 2.55384615em;}
+}
 /* Стили для мобильных устройств */
 @media (max-width: 767px) {
     .search {
@@ -12,11 +36,12 @@
         box-sizing: border-box;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
     }
 
     .vector-search-box-input {
         flex: 1;
-        margin-right: 5px;
+        margin-left:-5px;
     }
 
     .searchButton {
@@ -27,12 +52,13 @@
 /* Стили для планшетов */
 @media (min-width: 768px) and (max-width: 1024px) {
     .search {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         padding: 15px;
         box-sizing: border-box;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .vector-search-box-input {
@@ -54,6 +80,7 @@
         box-sizing: border-box;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .vector-search-box-input {

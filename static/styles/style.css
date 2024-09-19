@@ -1266,9 +1266,9 @@ button, input, optgroup, select, textarea {
 @media (max-width: 800px) {
     .text-page {
         flex-direction: column!important; /* Вертикальная колонка */
-        align-items: center;
-        justify-content: center;
-        width: 100%; /* Занимает всю ширину */
+        align-items: left;
+        justify-content: left;
+        width: 90%; /* Занимает всю ширину */
         margin: 0 auto; /* Центрирование секции */
         overflow-x: visible; /* Убирает горизонтальную прокрутку на малых экранах */
     }
@@ -1354,7 +1354,10 @@ button, input, optgroup, select, textarea {
             display: none;
         }
     }
-
+    @media (max-width: 500px){
+        
+      
+    }
 
 /*  */
 @media (max-width: 1111px) {
@@ -1683,7 +1686,7 @@ button, input, optgroup, select, textarea {
 
     .header.open {
         
-        width: 90%; /* Разворачиваем панель на весь экран */
+        width: 45%; /* Разворачиваем панель на весь экран */
         opacity: 1;
     }
     .header.open + .toggle-header-btn {
@@ -1694,8 +1697,8 @@ button, input, optgroup, select, textarea {
 }
 @media (max-width: 762px) {
     .header-img {
-    min-width: 200px!important;
-        min-height: 200px !important;
+    min-width: 160px!important;
+        min-height: 160px !important;
         margin-left: 20px!important;
         
     }
@@ -1758,6 +1761,261 @@ button, input, optgroup, select, textarea {
         top: 28.6%!important; /* Сдвигаем модальное окно выше на 10px */
     }
 }
+@media (max-width: 1111px){
+    .box{
+        display: inline-block;
+        width: 100%; /* Ширина контейнера */
+    max-width: 907px; /* Ограничение максимальной ширины */
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    white-space: nowrap; /* Предотвращает перенос строк */
+      
+    }
+}
+/* 500 */
+@media (max-width: 550px) {
+     .page {
+        display: flex;
+        flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden; /* Прячем горизонтальное переполнение */
+    }
+    .img-conteiner{
+        width: 100%; /* Контейнер занимает всю ширину экрана */
+    max-width: 500px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+    }
+
+    .page > * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        flex: 1 1 auto; /* Элементы могут растягиваться или сжиматься */
+        min-width: 0; /* Избегаем переполнения по ширине */
+        word-wrap: break-word; /* Переносим длинные слова */
+    }
+
+    
+    
+
+    .header {
+        background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white) 0%, var(--ruwiki-background-color-gray) 0%);
+        width: 0;
+        opacity: 0;
+        overflow-y: scroll;
+        position: fixed; /* Фиксируем панель на экране */
+        top: 0;
+        left: 0;
+        padding-top: 10px;
+        padding-left: 10px;
+        height: 100%; /* Делаем её растягиваемой на весь экран */
+        z-index: 98;
+        
+    }
+
+    .toggle-header-btn {
+        display: block; /* Показываем кнопку на маленьких экранах */
+    }
+
+    .header.open {
+        
+        width: 60%; /* Разворачиваем панель на весь экран */
+        opacity: 1;
+    }
+    .header.open + .toggle-header-btn {
+        display: none; /* Скрываем кнопку, когда панель открыта */
+    }
+
+    
+}
+@media (max-width: 550px) {
+    .header-img {
+    min-width: 160px!important;
+        min-height: 160px !important;
+        margin-left: 22px!important;
+        
+    }
+}
+@media (max-width: 550px) {
+    .fixed-ul,
+    .vector-legacy-sidebar1,
+    .vector-legacy-sidebar2,
+    .vector-legacy-sidebar3,
+    .vector-legacy-sidebar4,
+    .vector-legacy-sidebar5{
+        font-size: 14px !important;
+        line-height: 30px !important; 
+    }
+}
+@media (max-width: 550px) {
+    .span-header,.settings-header {
+        font-size: 18px !important;
+        
+    }
+    .buttonLA{
+        width: 150px!important;
+        height:40px !important;
+        font-size:14px !important;
+    }
+    .edit-links{font-size:12px!important;
+    }
+    .edit-links a::before {
+        
+        width: 10px!important;
+    height: 10px!important;
+    }
+}
+@media (max-width: 1200px){
+    .box{
+        display: inline-block;
+        width: 100%; /* Ширина контейнера */
+    max-width: 987px; /* Ограничение максимальной ширины */
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    white-space: nowrap; /* Предотвращает перенос строк */
+      }
+}
+@media (max-width: 1111px){
+.sign-at-the-end-of-the-page{
+    display: inline-block;
+    width: 100%; /* Ширина контейнера */
+max-width: 907px; /* Ограничение максимальной ширины */
+overflow-x: auto; /* Горизонтальная прокрутка */
+white-space: nowrap; /* Предотвращает перенос строк */
+  
+}
+}
+@media (max-width: 716px){
+
+    .mw-highlight pre{
+        display: inline-block;
+        width: 100%; /* Ширина контейнера */
+    max-width: 907px;
+    overflow-x: auto
+    
+    
+    }
+}
+
+/* Медиа-запросы для адаптации */
+@media (max-width: 1199px) {
+    .end-page {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        height: 300px !important;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: space-between; /* Равномерное распределение изображений по ширине контейнера */
+        flex-wrap: nowrap; /* Отключаем перенос изображений на следующую строку */
+    }
+    .end-page>.image-end-page{
+        width: 100% !important;
+        max-width: 304px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        
+        margin-top: -10px;
+        height: 50px !important;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between; /* Равномерное распределение изображений по ширине контейнера */
+        flex-wrap: nowrap; 
+    }
+
+}
+@media (max-width: 1199px) {
+    .end-page {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Равномерное распределение изображений по ширине контейнера */
+        flex-wrap: nowrap; /* Отключаем перенос изображений на следующую строку */
+    }
+
+    .end-page-img-1, .end-page-img-2, .end-page-img-3 {
+        max-width: 33.33% !important; /* По одной трети контейнера для каждого изображения */
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        flex: 1; /* Обеспечиваем, что изображения занимают доступное пространство */
+    }
+}
+
+@media (max-width: 1111px) {
+    .end-page {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Равномерное распределение изображений по ширине контейнера */
+        flex-wrap: nowrap; /* Отключаем перенос изображений на следующую строку */
+    }
+
+    .end-page-img-1, .end-page-img-2, .end-page-img-3 {
+        max-width: 33.33% !important; /* По одной трети контейнера для каждого изображения */
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        flex: 1; /* Обеспечиваем, что изображения занимают доступное пространство */
+    }
+}
+
+@media (max-width: 768px) {
+    .end-page {
+        width: 100% !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Равномерное распределение изображений по ширине контейнера */
+        flex-wrap: nowrap; /* Отключаем перенос изображений на следующую строку */
+    }
+
+    .end-page-img-1, .end-page-img-2, .end-page-img-3 {
+        max-width: 33.33% !important; /* По одной трети контейнера для каждого изображения */
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        flex: 1; /* Обеспечиваем, что изображения занимают доступное пространство */
+    }
+
+    .end-page p {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Подцветка текста */
 .span-header{
@@ -3327,6 +3585,10 @@ padding-left: 4px;
 }
 /* табличка внизу страницы */
 .sign-at-the-end-of-the-page{
+    display: inline-block;
+    width: 100%; /* Ширина контейнера */
+    max-width: 100%; /* Для адаптивного поведения */
+    box-sizing: border-box; /* Учёт padding и границ в ширину */
     height: 55px;
     width: 1035px;
     list-style-type: none;
@@ -3402,9 +3664,7 @@ background-image: linear-gradient(to bottom, var(--ruwiki-background-color-white
 .Privacy-Policy-p{
     margin-top: 5px;
 }
-.Mobile-version-p{
 
-}
     
 .end-page p{
    
